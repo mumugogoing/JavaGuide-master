@@ -1,0 +1,20 @@
+1.GIT Bush here
+2.git config --global user.name "mumu"
+3.git config --global user.email "mumu@qq.com"
+4.cd ~/.shh(查看ssh存在情况--可省略)
+5.ssh-keygen -t rsa -c "mumu@qq.com"（创建新的ssh keys保证上传文件--可以省略）
+$指定目录: C:\deskbook\（说明：若在此处不输入路径，而直接按回车，则ssh keys生成后存放的路径为C:\User\.ssh）
+
+$输入密码: 123456
+
+$确认密码: 123456
+
+如此即可在C:\deskbook\文件夹中生成ssh keys。包括两个文件rd_rsa和id_rsa.pub
+6.git init
+7.git status
+8.git add .
+9.git commit -m "日志"
+10.git remote add origin https://github.com/mumugogoing/CS-Notes-master.git
+11.git push origin master
+12.git pull --rebase origin master
+
